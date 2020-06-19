@@ -1,0 +1,9 @@
+{
+  "name": "rendeu",
+  "version": "1.0.0",
+  "description": "Api se serviços para a aplicação financeira",
+  "main": "index.js",
+  "author": "Philipe Vieira",
+  "license": "MIT",
+  "private": false
+}
