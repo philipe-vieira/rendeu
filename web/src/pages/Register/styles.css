@@ -1,0 +1,110 @@
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  height: 12vh;
+  width: auto;
+
+  margin-bottom: 40px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+
+  color: var(--text-color);
+  background-color: white;
+
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  -webkit-box-shadow: 11px 11px 10px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow:    11px 11px 10px rgba(50, 50, 50, 0.55);
+  box-shadow:         11px 11px 10px rgba(50, 50, 50, 0.55);
+}
+
+.login-container h3 {
+  color: var(--text-color);
+  margin-bottom: 40px;
+
+}
+
+.login-container p{
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.login-container p a, 
+.login-container p a:hover,
+.login-container p a:visited{
+  text-decoration: none;
+}
+
+.login-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container form .form-item{
+  position: relative;
+}
+
+.login-container form .form-item label{
+  position: absolute;
+  top: 0px;
+  left: 0;
+
+  padding: 5px 7px;
+
+  transition: 1.2s;
+}
+
+.login-container form .form-item input:focus ~ label,
+.login-container form .form-item input:valid ~ label{
+  transform: translateY(-24px);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.login-container form input{
+  height: 30px;
+  width: 100%;
+
+  background-color: #F0F0F0;
+
+  margin-bottom: 25px;
+  padding: 7px;
+  border: 0px;
+  border-radius: 10px;
+  border-bottom: 1px solid var(--primary-color);
+
+  outline: none;
+}
+
+.login-container form button {
+  width: 60%;
+  height: auto;
+  font-size: 14px;
+  font-weight: bold;
+
+  background-color: var(--primary-color);
+  color: white;
+
+  border: 0px;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 7px 0px;
+  align-self: center;
+}
