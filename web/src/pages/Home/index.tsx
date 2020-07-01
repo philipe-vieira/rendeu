@@ -1,14 +1,18 @@
 import React from 'react'
 
 import './styles.css'
-import NavBar from '../../Components/Navbar'
+import Layout from '../../templates/Home'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div className="container">
-      <NavBar/>
+    <Layout>
       <h1>Hello Home</h1>
-    </div>
+      <h1>Hello Home</h1>
+      <h1>Hello Home</h1>
+      <h1>Hello Home</h1>
+      <h1>Hello Home</h1>
+      <h1>Hello Home</h1>
+    </Layout>
   )
 }
 
