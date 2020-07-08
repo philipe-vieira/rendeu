@@ -1,0 +1,43 @@
+button,
+button:focus {
+  background-color: transparent;
+  border: none!important;
+  border-radius: 50%;
+  border-style: none!important;
+
+  outline: none!important;
+  cursor: pointer;
+}
+
+.layer .item-menu {
+  width: 100%;
+}
+
+.layer .item-menu a {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.layer .item-menu a svg {
+  margin: 0px 10px;
+
+  transition: .3s;
+}
+
+.layer .item-menu:hover,
+.layer .item-menu:hover > a{
+  color: #fff;
+  background-color: #05C55C;
+}
+
+.item-menu a ,
+.item-menu a:visited{
+  color: #445;
+  text-decoration: none;
+}
+
+.layer .item-menu a p{
+  font-size: 16px;
+  padding: 2px;
+}

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BsPeopleCircle, BsChevronLeft, BsList } from 'react-icons/bs';
+import { BsChevronLeft, BsList } from 'react-icons/bs';
 
 import './styles.css';
+import './responsive.css';
 import logomarca from '../../assets/logomarca-360x720.png'
 import sideNavItems from './sideNavItems'
+import UserButton from '../../components/UserButton';
 
 
 const LayoutTest: React.FC = (props) => {
@@ -44,12 +46,7 @@ const LayoutTest: React.FC = (props) => {
         </div>
 
         <div className="items">
-          <h2>Items</h2>
-          <BsPeopleCircle 
-            size={28} 
-            color="#fff" 
-            onClick={() => { alert('Clicou') }} 
-          />
+          <UserButton/>
         </div>
       </header>
       <div className="body">
@@ -83,152 +80,6 @@ const LayoutTest: React.FC = (props) => {
           <h2>Template Testt</h2>
           <h2>Template Testt</h2>
           <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2><h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2><h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2><h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2><h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2><h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          <h2>Template Testt</h2>
-          
-
           <footer>
             <p>Powered by <a href="http://github.com/philipe-vieira/" target="_blank" rel="noopener noreferrer">Philipe Vieira</a></p>
           </footer>
