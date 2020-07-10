@@ -1,0 +1,77 @@
+  /* SMALLS SCREENS --- SMARTPHONES AND TABLETS */
+  @media only screen and (max-width: 880px) {
+    .body .side-nav {
+      height: 100vh;
+      width: 0px;
+  
+      position: absolute;
+    }
+    
+    .body .side-nav.expanded{
+      width: 250px;
+    }
+  
+    .body .content {
+      width: 100%;
+  
+      display: flex;
+      flex-direction: column;
+    }
+  
+    footer {
+      width: 100%;
+    }
+  }
+  
+    /* LARGE SCREENS --- NOTEBOOKS AND DESKTOPS*/
+  @media only screen and (min-width: 800px) { 
+    header .menu-button {
+      display: none;
+    }
+    
+    .body {
+      display: grid;
+      grid-template-columns: 250px auto;
+    }
+  
+    .body .side-nav {
+      height: 100vh;
+      width: auto;
+      position: relative;
+    }
+  
+    .body .content {
+      width: 100%;
+  
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      
+    }
+  
+    .content footer {
+      width: calc(100% - 40px);
+  
+      grid-column: span 3;
+    }
+  }
+  
+  /* TABLETS ONLY */
+  @media only screen and (min-width: 576px) and (max-width: 880px) {
+    .body .content {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  
+  /* NOTEBOOKS */
+  @media only screen and (min-width: 800px) and (max-width: 1400px){
+    .body .content {
+      grid-template-columns: repeat(2, 50%);
+    }
+  
+    .content footer {
+      grid-column: span 2;
+    }
+  }
+  
+  
